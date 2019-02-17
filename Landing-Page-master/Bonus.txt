@@ -1,0 +1,7 @@
+Voici les quelques features ajoutées :
+
+Hover grossissant sur les boutons ancres en haut (sur les écrans supérieurs à mobile)
+Menu déroulant en fade/slide progressif (sur affichage mobile)
+
+Bouton back to top avec petit effet hover sur le fond et la flèche
+

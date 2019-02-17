@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+
+* {
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/hero-image.jpg");
+    line-height: 1.2;
+}
+
+button {
+    border-style: unset;
+    color: unset;
+    cursor: pointer;
+    outline: none;
+}
+
+/* header */
+.header {
+    background: #222;
+}
+
+.nav_bar-menu {
+    display: none;
+    padding-bottom: 10px;
+}
+
+.nav_bar {
+    border-bottom: 1px solid #999;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_bar-list {
+    list-style-type: none;
+    height: 50px;
+    width: 100%;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.nav_bar-list li {
+    border-bottom: 1px solid #999;
+    text-align: center;
+    padding: 5px;
+}
+
+.nav_bar-list li:hover {
+    background-color: #f2f2f2;
+}
+
+.nav_bar-list a li:hover {
+    color: black;
+}
+
+.nav_bar-list a li {
+    color: #999;
+    font-family: 'Arvo', courier, serif;
+    width: 100%;
+    margin-right: 40px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+#toplogo {
+    height: 22px;
+    padding: 14px;
+}
+
+#button_nav {
+    margin: 7px 15px;
+    padding: 2px 12px;
+    content: "/f0c9";
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: lighter;
+    text-decoration: inherit;
+    font-size: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15%;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+}
+
+#button_nav:hover {
+    color: #222;
+    background-color: #f2f2f2;
+}
+/* !header */
+
+/* main content */
+/* common parts properties */
+.part_box {
+    display: grid;
+    grid-gap: 4vh;
+    justify-items: center;
+    text-align: center;
+    padding: 5vh 0;
+    background: white;
+}
+
+.title_text {
+    font-size: 30px;
+    font-weight: normal;
+    padding-top: 20px;
+}
+
+.title {
+    color: #D9534F;
+    font-family: 'Arvo', courier, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 26px;
+}
+
+.title_underline {
+    border: none;
+    background-color: #D9534F;
+    height: 1px;
+    width: 17vh;
+    margin-top: 1vh;
+}
+/* !common parts properties */
+
+/* part 1 */
+#home {
+    font-family: 'Arvo', courier, serif;
+    color: white;
+    background-color: unset;
+}
+
+.text_1 {
+    margin: 0 10%;
+    font-size: 30px;
+}
+
+.text_2 {
+    margin: 0 4%;
+    font-size: 14px;
+    line-height: 1.40;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.8px;
+    color: #D8DBDB;
+}
+
+.text_2 > span {
+    color: white;
+    font-weight: bold;
+}
+
+.button.info {
+    background-color: #D9534F;
+    width: 140px;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 18px;
+    outline: none;
+}
+
+.button.info:hover {
+    color: #D9534F;
+    background-color: white;
+}
+
+#logo_code {
+    background-image: url("../images/code.png");
+    background-size: contain;
+    width: 87px;
+    height: 87px;
+}
+/* part 1*/
+
+/* part 2 */
+#logo_who {
+    background-image: url("../images/academy-brand-med.png");
+    background-size: contain;
+    width: 150px;
+    height: 150px;
+    margin-top: 40px;
+}
+
+.text {
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.text > span {
+    color: red;
+}
+/* !part 2 */
+
+/* part 3 */
+#get-involved {
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fa-circle {
+    color: #333;
+}
+
+.button.part3 {
+    background-color: #f4f4f4;
+    padding: 40px 0px;
+}
+
+.button a {
+    text-decoration: none;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #e74c3c;
+}
+
+.button a:hover {
+    background-color: #e74c3c;
+    color: white;
+}
+/* !part 3 */
+/* !main content */
+
+/* footer */
+#back-to-top {
+    background-color: #F74C3C;
+    width: 100%;
+    padding-top: 60px;
+}
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    font-family: "FontAwesome";
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top span {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 17px;
+    top: 13px;
+    font-size: 24px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+
+#return-to-top:hover span {
+    color: #fff;
+    top: 5px;
+}
+
+#logobas {
+    padding: 10px;
+    width: 400px;
+    margin-top: 80px;
+}
+/* !footer */
+
+
+@media screen and (min-width: 767px) {
+    /* header */
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color: #222;
+    }
+
+    #toplogo {
+        margin-left: 60px;
+    }
+
+    #button_nav {
+        display: none;
+    }
+
+    .nav_bar-menu {
+        display: block;
+        display: flex;
+        margin-right: 60px;
+        padding-bottom: 0;
+    }
+
+    .nav_bar, .nav_bar-list li {
+        border-bottom: unset;
+        transition: background-color .25s ease-out, transform .5s ease-out;
+    }
+
+    .nav_bar-list li:hover {
+        padding: 5px;
+        border-radius: 3px;
+        transform: scale(1.2);
+    }
+
+    .nav_bar-list {
+        display: flex;
+    }
+
+    .nav_bar-list li {
+        margin: 10px;
+    }
+    /* !header */
+
+    /* parts */
+    .text_1, .text_2, .text {
+        width: 70%;
+    }
+
+    .text_1 {
+        font-size: 36px;
+    }
+
+    .text_2 {
+        font-size: 16px;
+    }
+    /* !parts */
+
+    /* footer */
+    #logobas {
+        padding: 10px;
+        width: 300px;
+        margin-top: 80px;
+        margin-left: 120px;
+    }
+    /* !footer */
+}
+
+@media screen and (min-width: 1000px) {
+    /* header */
+    #toplogo {
+        height: 26px;
+        padding: 14px;
+    }
+    /* !header */
+
+    /* main content */
+    #get {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_1, .text_2, .text {
+        width: 80%;
+    }
+
+    .text_1 {
+        font-size: 50px;
+        width: 60%;
+    }
+
+    .text_2 {
+        font-size: 24px;
+        width: 70%;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+    /* !main content */
+}
+
+@media screen and (min-width: 1001px) {
+    .text_1 {
+        font-size: 60px;
+    }
+}
