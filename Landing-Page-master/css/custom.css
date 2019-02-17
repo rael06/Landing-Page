@@ -399,7 +399,7 @@ a {
     /* !main content */
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 1300px) {
     .text_1 {
         font-size: 60px;
     }
